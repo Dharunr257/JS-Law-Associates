@@ -1,0 +1,394 @@
+/* about.css */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #111;
+    margin: 0;
+    padding-top: 70px;
+    /* Account for fixed navbar */
+    overflow-y: auto;
+    /* Enable scrolling for multi-section page */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: auto;
+    overflow-x: hidden;
+}
+
+body.about-page {
+    overflow-y: auto;
+}
+
+
+/* Hero Section */
+
+.about-hero {
+    background-color: #0000004d;
+    color: #000000;
+    height: 95vh;
+    /* Original default */
+}
+
+.about-hero .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: 1.5rem;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 1rem;
+    height: 90%;
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #000000;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    height: 100%;
+    align-content: end;
+}
+
+.about-image img {
+    max-width: 70%;
+    height: auto;
+    padding-bottom: 1rem;
+}
+
+.about-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+}
+
+.btn-outline,
+.btn-filled {
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-outline {
+    background-color: #f7b733;
+    color: #000;
+    border: none;
+}
+
+.btn-filled {
+    background-color: #5dd12f;
+    color: #fff;
+    border: none;
+}
+
+
+/* Practice Areas */
+
+.practice-areas {
+    background-color: #fff;
+    padding: 2.5rem 1.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.practice-areas h2 {
+    font-size: 2rem;
+    color: #1d3a60;
+    margin-bottom: 1.2rem;
+}
+
+.areas-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.areas-list li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    padding-left: 0.5rem;
+}
+
+
+/* Why Choose Section */
+
+.why-choose {
+    padding: 2rem 1.5rem;
+    background-color: #eef3f7;
+    text-align: center;
+}
+
+.why-choose h2 {
+    font-size: 2rem;
+    color: #1d3a60;
+    margin-bottom: 1rem;
+}
+
+.why-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.why-list li {
+    margin-bottom: 0.7rem;
+    font-size: 1.05rem;
+}
+
+
+/* Contact Call-To-Action */
+
+.contact-call {
+    background-color: #112b4a;
+    color: #fff;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.call-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.call-box p {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+.btn-consult {
+    padding: 0.8rem 1.8rem;
+    background-color: #f7b733;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-consult:hover {
+    background-color: #ff9500;
+    color: #fff;
+}
+
+
+/* Practice Areas (Grid) */
+
+.practice-areas {
+    padding: 4rem 1rem;
+    background-color: #fff;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #1d3a60;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.areas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.area-card {
+    display: grid;
+    grid-template-columns: 40px auto;
+    align-items: start;
+    gap: 1rem;
+    max-width: 350px;
+    padding: 1rem;
+    border-radius: 8px;
+    background: transparent;
+    color: #333;
+}
+
+.area-icon {
+    font-size: 2rem;
+    color: #f7b733;
+}
+
+.area-content h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #0a2942;
+}
+
+.area-content p {
+    margin: 0.3rem 0 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+
+/* About Values Section */
+
+.about-values-section {
+    padding: 1rem;
+    color: #fff;
+}
+
+.values-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.value-card {
+    display: grid;
+    grid-template-columns: 40px auto;
+    gap: 1rem;
+    max-width: 400px;
+    flex: 1 1 45%;
+}
+
+.value-icon {
+    font-size: 1.8rem;
+    color: #533802;
+    line-height: 1;
+}
+
+.value-card h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #000000;
+    font-weight: 600;
+}
+
+.value-card p {
+    margin: 0.3rem 0 0;
+    font-size: 0.95rem;
+    color: #000000;
+    line-height: 1.5;
+}
+
+.value-call {
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0a2942;
+}
+
+.value-call .highlight {
+    color: #f7b733;
+    font-weight: bold;
+}
+
+
+/* Mobile/Small Screen Responsiveness */
+
+@media screen and (max-width: 768px) {
+    .about-hero {
+        height: auto;
+        /* Allow content to dictate height */
+        min-height: 60vh;
+        /* Minimum height for small screens */
+        padding: 2rem 0.8rem;
+    }
+    .about-hero .container {
+        flex-direction: column-reverse;
+        text-align: center;
+        height: auto;
+        padding-left: 0;
+    }
+    .about-text,
+    .about-image {
+        padding: 0;
+        min-width: 100%;
+        height: auto;
+    }
+    .about-text h1 {
+        font-size: clamp(1.6rem, 4vw, 2rem);
+    }
+    .about-text p {
+        font-size: clamp(0.9rem, 2.5vw, 1rem);
+    }
+    .about-image img {
+        max-width: 90%;
+    }
+    .about-buttons {
+        margin: 1rem 0;
+    }
+    .areas-grid,
+    .values-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .area-card,
+    .value-card {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+    .practice-areas {
+        padding: 2rem 0.8rem;
+    }
+    .why-choose {
+        padding: 1.5rem 0.8rem;
+    }
+    .contact-call {
+        padding: 1.5rem 0.8rem;
+    }
+    .call-box h3 {
+        font-size: clamp(1.2rem, 3vw, 1.4rem);
+    }
+    .call-box p {
+        font-size: clamp(0.85rem, 2vw, 1rem);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about-text h1 {
+        font-size: clamp(1.4rem, 3.5vw, 1.8rem);
+    }
+    .about-text p {
+        font-size: clamp(0.8rem, 2vw, 0.9rem);
+    }
+    .btn-outline,
+    .btn-filled,
+    .btn-consult {
+        padding: 0.6rem 1.2rem;
+        font-size: clamp(0.8rem, 2vw, 0.9rem);
+    }
+    .practice-areas h2,
+    .section-heading,
+    .why-choose h2 {
+        font-size: clamp(1.4rem, 3.5vw, 1.8rem);
+    }
+    .area-content h4,
+    .value-card h4 {
+        font-size: clamp(0.9rem, 2vw, 1rem);
+    }
+    .area-content p,
+    .value-card p {
+        font-size: clamp(0.8rem, 2vw, 0.9rem);
+    }
+}

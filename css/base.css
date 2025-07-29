@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+    /* overflow-y: auto; */
+    scroll-behavior: smooth;
+}
+
+.onepage-wrapper {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease;
+    will-change: transform;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    text-align: center;
+    transition: background 0.5s;
+    color: white;
+    scroll-snap-align: start;
+}
+
+#hero {
+    background: #eeeeee;
+    color: #000000;
+}
+
+#rera {
+    background-color: #FAF9EE;
+    color: #111;
+}
+
+#drt {
+    background-color: #A2AF9B;
+    color: #111;
+}
+
+#divorce {
+    background-color: #DCCFC0;
+    color: #111;
+}
+
+#cheque {
+    background-color: #EEEEEE;
+    color: #111;
+}
+
+#property {
+    background-color: #FAF9EE;
+    color: #111;
+}
+
+#loan {
+    background-color: #A2AF9B;
+    color: #111;
+}
+
+#insolvency {
+    background-color: #DCCFC0;
+    color: #111;
+}
+
+#drafting {
+    background-color: #EEEEEE;
+    color: #111;
+}
+
+.disclaimer-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(20, 20, 20, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.disclaimer-box {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2rem 2.5rem;
+    max-width: 1000px;
+    width: 90%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.disclaimer-box h3 {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.disclaimer-box p {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.disclaimer-box button {
+    margin-top: 1rem;
+    padding: 0.6rem 1.5rem;
+    background-color: #4b2e1f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.disclaimer-box button:hover {
+    background-color: #684218;
+}
+
+
+/* Mobile/Small Screen Responsiveness */
+
+@media screen and (max-width: 768px) {
+    .section {
+        font-size: clamp(1.2rem, 3.5vw, 1.6rem);
+        padding: 2rem 0.8rem;
+        height: auto;
+        /* Allow content to dictate height */
+        min-height: 80vh;
+    }
+    .disclaimer-box {
+        padding: 1.5rem;
+        max-width: 95%;
+        height: auto;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .disclaimer-box {
+        padding: 1rem;
+    }
+    .disclaimer-box h3 {
+        font-size: clamp(0.9rem, 2vw, 1rem);
+    }
+    .disclaimer-box p {
+        font-size: clamp(0.8rem, 2vw, 0.9rem);
+    }
+    .disclaimer-box button {
+        padding: 0.5rem 1.2rem;
+        font-size: clamp(0.8rem, 2vw, 0.9rem);
+    }
+}

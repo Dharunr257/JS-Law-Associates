@@ -1,0 +1,84 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.contact {
+    padding: 5rem 1.5rem;
+    background-color: #f4f4f8;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #3d52a0;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.contact small {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    color: #c00;
+}
+
+.form-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.form-wrapper iframe {
+    width: 100%;
+    height: 821px;
+    /* Default height */
+    border: none;
+}
+
+.contact-note {
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+
+/* Responsive Design */
+
+@media (min-width: 768px) {
+    .contact h2 {
+        font-size: 2.5rem;
+    }
+    .contact p,
+    .contact-note {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact {
+        padding: 4rem 0.8rem;
+    }
+    .contact h2 {
+        font-size: 1.6rem;
+    }
+    .contact p,
+    .contact-note {
+        font-size: 1rem;
+    }
+    .form-wrapper iframe {
+        height: 600px;
+        /* Adjusted for smaller screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .form-wrapper iframe {
+        height: 550px;
+        /* Further reduced for very small screens */
+    }
+}

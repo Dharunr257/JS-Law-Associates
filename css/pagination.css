@@ -1,0 +1,80 @@
+/* pagination.css */
+.onepage-pagination {
+  position: fixed;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  z-index: 999;
+  list-style: none;
+}
+
+.onepage-pagination li {
+  position: relative;
+  text-align: right;
+  margin: 35px 0;
+  font-size: 1.1rem;
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.5s ease-out;
+}
+
+.onepage-pagination li a {
+  color: #bebaba93;
+  text-decoration: none;
+  font-weight: 400;
+  padding-right: 30px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.onepage-pagination li a:hover {
+  color: white;
+}
+
+.onepage-pagination li a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border: 2px solid #0b0b0b;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.onepage-pagination li::after {
+  content: '';
+  position: absolute;
+  right: 5px;
+  top: 25px;
+  height: 35px;
+  width: 2px;
+  background-color: #000000;
+  opacity: 0.5;
+}
+
+.onepage-pagination li:last-child::after {
+  display: none;
+}
+
+.onepage-pagination li a.active {
+  color: rgb(12, 12, 12);
+  font-weight: 700;
+}
+
+.onepage-pagination li a.active::after {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(10, 10, 10);
+  border-color: rgb(0, 0, 0);
+}
+
+/* Mobile/Small Screen Responsiveness */
+@media screen and (max-width: 768px) {
+  .onepage-pagination {
+    display: none; /* Original behavior */
+  }
+}

@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    z-index: 1000;
+    padding: 0.8rem 1.5rem;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    transition: 0.4s ease;
+    border-radius: 2px;
+}
+
+.menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(4px, 4px);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: gold;
+}
+
+.onepage-wrapper {
+    width: 100%;
+    min-height: 100%;
+    transition: transform 0.6s ease;
+    will-change: transform;
+    position: relative;
+    background-color: #000;
+}
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    text-align: center;
+    transition: background 0.5s;
+    color: white;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.onepage-pagination {
+    position: fixed;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    z-index: 999;
+    list-style: none;
+}
+
+.onepage-pagination li {
+    position: relative;
+    text-align: right;
+    margin: 35px 0;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', sans-serif;
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s ease-out;
+}
+
+.onepage-pagination li a {
+    color: #dcdcdc;
+    text-decoration: none;
+    position: relative;
+    font-weight: 400;
+    padding-right: 30px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.onepage-pagination li a:hover {
+    color: white;
+}
+
+.onepage-pagination li a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border: 2px solid #dcdcdc;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.onepage-pagination li::after {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 25px;
+    height: 35px;
+    width: 2px;
+    background-color: #dcdcdc;
+    opacity: 0.5;
+}
+
+.onepage-pagination li:last-child::after {
+    display: none;
+}
+
+.onepage-pagination li a.active {
+    color: white;
+    font-weight: 700;
+}
+
+.onepage-pagination li a.active::after {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-color: white;
+}
+
+
+/* Mobile/Small Screen Responsiveness */
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background-color: #111;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1.5rem 0;
+        display: none;
+        z-index: 999;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease-in-out;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .nav-links li a {
+        font-size: clamp(1rem, 3vw, 1.2rem);
+    }
+    .brand {
+        font-size: clamp(1.2rem, 3vw, 1.4rem);
+    }
+    html,
+    body {
+        overflow-y: auto;
+        height: auto;
+        scroll-snap-type: y mandatory;
+        /* Enable scroll snapping */
+    }
+    .onepage-wrapper {
+        height: auto;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .section {
+        font-size: clamp(1.2rem, 3.5vw, 1.6rem);
+        padding: 2rem 0.8rem;
+        min-height: 80vh;
+        scroll-snap-align: start;
+    }
+    .onepage-pagination {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        padding: 0.6rem 0.5rem;
+    }
+    .brand {
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
+    }
+    .section {
+        font-size: clamp(1rem, 3vw, 1.4rem);
+        padding: 1.5rem 0.5rem;
+    }
+}
