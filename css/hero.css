@@ -124,7 +124,7 @@
     border-radius: 25px;
     font-weight: 600;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -139,7 +139,7 @@
 .hero-image {
     flex: 1;
     min-width: 200px;
-    text-align: center;
+    text-align: right;
     align-content: end;
 }
 
@@ -288,8 +288,8 @@
 
 @media screen and (max-width: 768px) {
     .hero-section {
-        height: -webkit-fill-available;
-        min-height: 60vh;
+        min-height: 100vh;
+        height: auto;
         padding: 1rem 0.8rem;
     }
     .hero-container {
@@ -315,6 +315,7 @@
     .hero-image {
         flex: 1 1 100%;
         min-width: 100%;
+        text-align: center;
     }
     .hero-image img {
         max-width: 50%;
@@ -357,6 +358,7 @@
 }
 
 @media screen and (max-width: 576px) {
+    
     .hero-text h1 {
         font-size: clamp(1.4rem, 3.5vw, 1.8rem);
     }
