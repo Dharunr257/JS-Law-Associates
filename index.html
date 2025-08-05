@@ -9,104 +9,91 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- In your HTML <head> -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/navbar.css">
+
+    <!-- <link rel="stylesheet" href="css/navbar.css"> -->
     <link rel="stylesheet" href="css/pagination.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/scrollbar.css">
     <link rel="stylesheet" href="css/hero.css">
-
 </head>
 
 <body>
+    <!-- HEADER -->
+    <header class="angled-header">
+        <div class="header-left">
+            <img src="./img/nav-logo.png" alt="Logo" class="logo-icon" />
+            <!-- <div class="logo-text">
+                <h1>JS LAW</h1>
+                <span>ASSOCIATES</span>
+            </div> -->
+        </div>
+        <div class="header-right">
+            <img src="./img/free-consultation.png" alt="Consultation" />
+        </div>
+        </header>
 
-    <!-- Navbar Include -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-left">
-                <a href="index.html">
-                    <img src="./img/logo.png" alt="logo" class="logo" />
-                </a>
-            </div>
-            <div class="brand">JS Law Associates</div>
-
-            <div class="nav-right">
-                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-                <ul class="nav-links" id="nav-links">
+        <nav class="custom-navbar">
+            <div class="navbar-left-slant"></div>
+            <div class="nav-content">
+                <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="service.html">Services</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
-    <div class="onepage-wrapper">
-
-        <section class="section hero-section" class="section1" id="hero">
-            <div class="hero-container">
-                <div class="hero-text">
-
-                    <h1><span class="wc">Welcome to</span><br><span id="typewriter"></span></h1>
-                    <div class="hero-description">
-                        <p>Professional Legal Solutions Rooted in Trust, Integrity & Action At JS LAW ASSOCIATES, Chennai, we provide dedicated legal services tailored to individuals and businesses across the city. With strong local experience and courtroom
-                            presence, we offer effective legal solutions for clients dealing with civil, family, real estate, debt, and financial disputes.</p><br>
-                        <p>We are committed to guiding you through complex legal situations—whether you're facing property issues, cheque bounce matters, loan defaults, RERA delays, divorce, or DRT notices with clear advice and strong representation.</p>
-                    </div>
-
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#" class="btn-outline"><i class="fas fa-phone-alt "></i> BOOK A FREE CONSULTATION</a>
-                        <a href="#" class="btn-filled"><i class="fas fa-comments"></i> WhatsApp</a>
-                        <!-- <button onclick="localStorage.removeItem('disclaimerAccepted'); location.reload();">
+                    <!-- <button onclick="localStorage.removeItem('disclaimerAccepted'); location.reload();">
   Reset Disclaimer
 </button> -->
+                </ul>
+                <a href="https://wa.me/919361224671" class="whatsapp-click"><img src="./img/whatsapp.png" alt="WhatsApp" srcset=""></a>
+            </div>
+        </nav>
 
+    <div class="onepage-wrapper">
+        <!-- Hero Section -->
+        <section class="section hero-section" id="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <div class="text-container">
+                        <h2>Welcome to <br><span id="typewriter">JS LAW ASSOCIATES</span></h2>
+                        <div class="hero-description">
+                            <p>Professional Legal Solutions Rooted in Trust, Integrity & Action At JS LAW ASSOCIATES at Chennai. We provide dedicated legal services tailored to individuals and businesses across the city. With strong local experience and courtroom presence, we offer effective legal solutions for clients dealing with civil, family, real estate, debt, and financial disputes.</p>
+                            <p>We are committed to guiding you through complex legal situations—whether you're facing property issues, cheque bounce matters, loan defaults, RERA delays, divorce, or DRT notices with clear advice and strong representation.</p>
+                        </div>
                     </div>
                 </div>
-
                 <div class="hero-image">
                     <img src="./img/lawyers-group.png" alt="Lawyer Team">
                 </div>
             </div>
+        </section>
+        
 
-            <div class="hero-footer">
-                <div class="contact-item">
-                    <i class="fas fa-phone-volume"></i>
-                    <div>
-                        <h4>Phone Number</h4>
-                        <p>+91 93612 24671</p>
-                    </div>
+        <!-- Loan Settlement -->
+        <section id="loan" class="section legal-section ">
+            <div class="legal-container">
+                <div class="legal-img">
+                    <img src="./img/loan.jpg" alt="Loan Settlement" />
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope-open-text"></i>
-                    <div>
-                        <h4>Email Address</h4>
-                        <p>jslawassociates2025@gmail.com</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <h4>Office Location</h4>
-                        <p>Chennai</p>
-                    </div>
+                <div class="legal-text">
+                    <h2>Loan Settlement & Harassment Cases</h2>
+                    <ul>
+                        <li>One-Time Settlement (OTS) negotiation</li>
+                        <li>Legal protection from recovery agent harassment</li>
+                        <li>Responding to bank notices and legal actions</li>
+                        <li>Representation before banks and courts</li>
+                    </ul>
+                    <img src="./img/Hammer-icon.gif" class="hammer-icon" alt="hammer icon" srcset="">
                 </div>
             </div>
         </section>
 
         <!-- RERA Services -->
         <section id="rera" class="section legal-section">
-
-            <div class="legal-container">
+            <div class="legal-container alt">
                 <div class="legal-text">
                     <h2>RERA (Real Estate) Legal Services</h2>
                     <ul>
@@ -123,12 +110,12 @@
         </section>
 
         <!-- DRT Services -->
-        <section id="drt" class="section legal-section alt">
+        <section id="drt" class="section legal-section">
             <div class="legal-container">
                 <div class="legal-img">
                     <img src="./img/drt.jpg" alt="DRT" />
                 </div>
-                <div class="legal-text">
+                <div class="legal-text alt">
                     <h2>Debt Recovery Tribunal (DRT) Cases</h2>
                     <ul>
                         <li>Filing and defending Securitisation Applications (S.A.)</li>
@@ -142,8 +129,7 @@
 
         <!-- Divorce -->
         <section id="divorce" class="section legal-section">
-
-            <div class="legal-container">
+            <div class="legal-container alt">
                 <div class="legal-text">
                     <h2>Divorce & Family Law</h2>
                     <ul>
@@ -160,12 +146,12 @@
         </section>
 
         <!-- Cheque Bounce -->
-        <section id="cheque" class="section legal-section alt">
+        <section id="cheque" class="section legal-section">
             <div class="legal-container">
                 <div class="legal-img">
                     <img src="./img/cheque.jpg" alt="Cheque Bounce" />
                 </div>
-                <div class="legal-text">
+                <div class="legal-text alt">
                     <h2>Cheque Bounce Cases (Section 138 NI Act)</h2>
                     <ul>
                         <li>Legal notice drafting and complaint filing</li>
@@ -177,45 +163,9 @@
             </div>
         </section>
 
-        <!-- Civil & Property -->
-        <section id="property" class="section legal-section">
-            <div class="legal-container">
-                <div class="legal-text">
-                    <h2>Civil & Property Disputes</h2>
-                    <ul>
-                        <li>Partition and inheritance suits</li>
-                        <li>Declaration of title and possession</li>
-                        <li>Encroachment and boundary issues</li>
-                        <li>Injunctions and stay orders</li>
-                    </ul>
-                </div>
-                <div class="legal-img">
-                    <img src="./img/property.jpg" alt="Property Disputes" />
-                </div>
-            </div>
-        </section>
-
-        <!-- Loan Settlement -->
-        <section id="loan" class="section legal-section alt">
-            <div class="legal-container">
-                <div class="legal-img">
-                    <img src="./img/loan.jpg" alt="Loan Settlement" />
-                </div>
-                <div class="legal-text">
-                    <h2>Loan Settlement & Harassment Cases</h2>
-                    <ul>
-                        <li>One-Time Settlement (OTS) negotiation</li>
-                        <li>Legal protection from recovery agent harassment</li>
-                        <li>Responding to bank notices and legal actions</li>
-                        <li>Representation before banks and courts</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
         <!-- Insolvency -->
         <section id="insolvency" class="section legal-section">
-            <div class="legal-container">
+            <div class="legal-container alt">
                 <div class="legal-text">
                     <h2>Insolvency & Bankruptcy (IBC)</h2>
                     <ul>
@@ -231,12 +181,27 @@
             </div>
         </section>
 
-        <!-- Legal Drafting -->
-        <section id="drafting" class="section legal-section alt">
+        <!-- Civil & Property -->
+        <section id="property" class="section legal-section">
             <div class="legal-container">
                 <div class="legal-img">
-                    <img src="./img/drafting.jpg" alt="Legal Drafting" />
+                    <img src="./img/property.jpg" alt="Property Disputes" />
                 </div>
+                <div class="legal-text">
+                    <h2>Civil & Property Disputes</h2>
+                    <ul>
+                        <li>Partition and inheritance suits</li>
+                        <li>Declaration of title and possession</li>
+                        <li>Encroachment and boundary issues</li>
+                        <li>Injunctions and stay orders</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legal Drafting -->
+        <section id="drafting" class="section legal-section">
+            <div class="legal-container alt">
                 <div class="legal-text">
                     <h2>Legal Drafting & Documentation</h2>
                     <ul>
@@ -246,51 +211,53 @@
                         <li>Document registration with Sub-Registrar</li>
                     </ul>
                 </div>
+                <div class="legal-img">
+                    <img src="./img/drafting.jpg" alt="Legal Drafting" />
+                </div>
             </div>
         </section>
     </div>
 
-
     <ul class="onepage-pagination">
         <li><a href="#hero" data-index="0" class="active">Home</a></li>
-        <li><a href="#rera" data-index="1">RERA Services</a></li>
-        <li><a href="#drt" data-index="2">DRT Cases</a></li>
-        <li><a href="#divorce" data-index="3">Divorce & Family</a></li>
-        <li><a href="#cheque" data-index="4">Cheque Bounce</a></li>
-        <li><a href="#property" data-index="5">Property Disputes</a></li>
-        <li><a href="#loan" data-index="6">Loan Settlement</a></li>
-        <li><a href="#insolvency" data-index="7">Insolvency</a></li>
+        <li><a href="#loan" data-index="1">Loan Settlement</a></li>
+        <li><a href="#rera" data-index="2">RERA Services</a></li>
+        <li><a href="#drt" data-index="3">DRT Cases</a></li>
+        <li><a href="#divorce" data-index="4">Divorce & Family</a></li>
+        <li><a href="#cheque" data-index="5">Cheque Bounce</a></li>
+        <li><a href="#insolvency" data-index="6">Insolvency</a></li>
+        <li><a href="#property" data-index="7">Property Disputes</a></li>
         <li><a href="#drafting" data-index="8">Legal Drafting</a></li>
     </ul>
+    <div class="hero-footer">
+                <div class="footer-left-slant">
+                        <a href="contact.html"><i class="fas fa-arrow-right"></i> Get in touch</a>
+                </div>
+                    <div class="right-info">
+                        <div class="info-box left-slant-box"><i class="fas fa-phone-alt"></i> +91 93612 24671</div>
+                        <div class="info-box"><i class="fas fa-envelope"></i> jslawassociates2025@gmail.com</div>
+                        <div class="info-box"><i class="fas fa-map-marker-alt"></i> Chennai</div>
+                    </div>
+                </div>
 
     <div id="disclaimer-modal" class="disclaimer-modal">
         <div class="disclaimer-box">
             <h3>Disclaimer</h3>
             <p>
-                Welcome to the official website of JS LAW ASSOCIATES – Chennai As per the rules of the Bar Council of India, lawyers are not permitted to solicit work or advertise. By proceeding further and accessing this website, you acknowledge and confirm that:
-
-            </p>
-            <p>
+                Welcome to the official website of JS LAW ASSOCIATES - Chennai As per the rules of the Bar Council of India, lawyers are not permitted to solicit work or advertise. By proceeding further and accessing this website, you acknowledge and confirm that:
                 You are seeking information about JS LAW ASSOCIATES of your own accord.
-            </p>
-            <p>There has been no form of solicitation, advertisement, or inducement by us or any member of our firm.
-            </p>
-            <p>The purpose of this website is solely to provide general information about our law firm, its areas of practice, and contact details.
-            </p>
-            <p>The content on this site is for informational purposes only, and should not be interpreted as legal advice or legal advertising.
-            </p>
-            <p>We are not liable for any consequence of any action taken by the user relying on information provided under this website. In all cases, users are advised to seek independent legal counsel before acting on any information provided herein.
-            </p>
-            <p>By clicking “Agree” or by browsing this site, you accept this disclaimer and agree that you are seeking information voluntarily.</p>
+                There has been no form of solicitation, advertisement, or inducement by us or any member of our firm.
+                The purpose of this website is solely to provide general information about our law firm, its areas of practice, and contact details.
+                The content on this site is for informational purposes only, and should not be interpreted as legal advice or legal advertising.
+                We are not liable for any consequence of any action taken by the user relying on information provided under this website. In all cases, users are advised to seek independent legal counsel before acting on any information provided herein.
+                By clicking “Agree” or by browsing this site, you accept this disclaimer and agree that you are seeking information voluntarily.</p>
             <button id="agree-button">I AGREE</button>
         </div>
     </div>
 
-
-
     <script src="js/onepage.js"></script>
-    <script src="js/typewriter.js"></script>
     <script src="js/disclaimer.js"></script>
+    <script src="js/typewriter.js"></script>
 
 </body>
 
