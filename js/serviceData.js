@@ -44,7 +44,7 @@ const serviceData = {
       "Property owners receiving auction/possession notices.",
       "Businesses or guarantors facing DRT litigation."
     ],
-    image: "../img/drt.jpg"
+    image: "img/drt.jpg"
   },
   divorce: {
     title: "Divorce Cases",
@@ -122,4 +122,5 @@ const serviceData = {
     image: "../img/drafting.jpg"
   }
 };
+
 
