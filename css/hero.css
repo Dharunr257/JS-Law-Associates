@@ -18,7 +18,7 @@ body {
   
 }
 .angled-header {
-  
+      background-color: white;
   color: #fff;
   height: 17vh;
   /* position: fixed; */
@@ -127,6 +127,7 @@ body {
   justify-content: center;
   gap: 24px;
   width: 70%;
+  font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -212,7 +213,8 @@ body {
 }
 
 #typewriter {
-    font-family: 'TimesTenProRoman', 'Times New Roman', serif;
+  
+    font-family: 'Roboto Condensed', sans-serif;
     color: #dbb23e;
     font-size: 3.5rem;
     font-weight: bold;
@@ -233,7 +235,7 @@ body {
 
 .hero-description {
   margin-top: 20px;
-  
+
 }
 
 .hero-description p {
@@ -241,6 +243,7 @@ body {
   line-height: 1.7;
   margin-bottom: 15px;
   font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
   /* font-weight: bold; */
   color: #222;
   text-align: justify;
@@ -255,7 +258,8 @@ body {
 .hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  bottom: 0;
+  object-fit: fill;
 }
 /* .hero-image img {
   width: 90%;
@@ -306,6 +310,9 @@ body {
   align-items: center;
   gap: 8px;
 }
+.footer-left-slant a:hover {
+  color: white;
+}
 
 /* 🔸 Right Info Boxes */
 .right-info {
@@ -317,6 +324,11 @@ body {
   justify-content: space-between;
   font-size: 14px;
   text-align: center;
+}
+
+.right-info a {
+  text-decoration: none;
+  color: inherit; /* keeps the current text color */
 }
 
 .info-box {
@@ -344,9 +356,10 @@ body {
   font-size: 16px;
 }
 
+
 .legal-section {
   position: relative;
-  background-image: url("../img/bg.png"); /* Ensure correct path */
+  background-image: url("../img/bg-2.png"); /* Ensure correct path */
   background-size: cover; /* Makes the image cover entire section */
   background-position: center; /* Keeps image centered */
   background-repeat: no-repeat;
@@ -367,6 +380,13 @@ body {
 .legal-section .alt{
   flex-wrap:wrap-reverse;
 }
+.legal-alt{
+  background-image: url("../img/bg.png"); /* Ensure correct path */
+  background-size: cover; /* Makes the image cover entire section */
+  background-position: center; /* Keeps image centered */
+  background-repeat: no-repeat;
+  
+}
 .alt .legal-text{
   transform: translateX(80px);
 }
@@ -378,10 +398,8 @@ body {
   justify-content: center;
 }
 .legal-img img {
-  width: 60%;
-  height: 95%;
-  border-radius: 8px;
-  box-shadow: 0px 0px 20px 8px rgb(0 0 0);
+  width: 54%;
+  height: 79%;
   z-index: 2;
 }
 .legal-text {
@@ -399,10 +417,11 @@ body {
 .legal-text h2 {
   font-size: 35px;
   color: #222;
-  font-family: 'Georgia', serif;
+  font-family: 'Roboto Condensed', sans-serif;
   border-bottom: 2px solid #000;
   display: inline-block;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  margin-top: 45px;
 }
 
 .legal-text ul {
@@ -418,6 +437,8 @@ body {
   position: relative;
   padding-left: 20px;
   line-height: 1.6;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
 }
 
 .legal-text ul li::before {

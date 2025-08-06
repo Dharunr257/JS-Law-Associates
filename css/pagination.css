@@ -62,6 +62,7 @@
 
 .onepage-pagination li a.active {
   color: rgb(12, 12, 12);
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
 }
 

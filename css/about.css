@@ -53,12 +53,15 @@ body.about-page {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #000000;
+    font-family: 'Roboto', sans-serif;
 }
 
 .about-text p {
     font-size: 1.2rem;
     line-height: 1.6;
     color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
 }
 
 .about-image {
@@ -130,6 +133,7 @@ body.about-page {
 .areas-list li {
     margin-bottom: 0.8rem;
     font-size: 1.1rem;
+    
     padding-left: 0.5rem;
 }
 
@@ -146,6 +150,7 @@ body.about-page {
     font-size: 2rem;
     color: #1d3a60;
     margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .why-list {
@@ -156,6 +161,10 @@ body.about-page {
 .why-list li {
     margin-bottom: 0.7rem;
     font-size: 1.05rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: left;
+    text-indent: 32%;
 }
 
 
@@ -237,12 +246,15 @@ body.about-page {
     margin: 0;
     font-size: 1.1rem;
     color: #0a2942;
+    font-family: 'Roboto', sans-serif;
 }
 
 .area-content p {
     margin: 0.3rem 0 0;
     font-size: 0.95rem;
     color: #555;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
 }
 
 
