@@ -13,7 +13,7 @@ const serviceData = {
       "Individuals with personal, education, or credit card loan defaults.",
       "Businesses facing NPA classification or recovery actions."
     ],
-    image: "/img/loan.jpg"
+    image: "./img/loan.jpg"
   },
   rera: {
     title: "RERA (Real Estate Regulatory Authority) Cases",
@@ -122,3 +122,4 @@ const serviceData = {
     image: "../img/drafting.jpg"
   }
 };
+
