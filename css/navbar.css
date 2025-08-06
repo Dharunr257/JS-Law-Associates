@@ -140,7 +140,12 @@
   .nav-links.show {
     display: flex;
   }
-
+  .img-none img{
+    display: block;
+  }
+  .brand img {
+    display: none;
+  }
   .nav-links li a {
     font-size: clamp(1rem, 3vw, 1.2rem);
   }

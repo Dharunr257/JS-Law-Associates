@@ -74,8 +74,8 @@
 }
 
 /* Mobile/Small Screen Responsiveness */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .onepage-pagination {
-    display: none; /* Original behavior */
+    display: none; 
   }
 }

@@ -180,6 +180,7 @@ body {
   height: 65vh;
   width: 100vw;
   font-family: 'Segoe UI', sans-serif;
+  width: auto;
 }
 
 
@@ -367,6 +368,7 @@ body {
   padding: calc(27vh + 8vh) 0 0 0;
   height: 65vh;
   width: 100vw;
+  width: auto;
 }
 
 .legal-container {
@@ -502,3 +504,20 @@ body {
 .disclaimer-box button:hover {
     background-color: #684218;
 }
+
+
+@media screen and (max-width: 800px) {
+  html, body {
+    width: 1200px !important;       /* Lock layout width to desktop style */
+    min-width: 1200px !important;   /* Prevent shrinking */
+    overflow-x: scroll !important;    /* Enable side scroll */
+    overflow-y: scroll !important;
+    zoom: 1 !important;             /* Fix zoom issues */
+    touch-action: pan-x pan-y;      /* Allow manual scrolling */
+  }
+
+  body {
+    position: relative;
+  }
+}
+

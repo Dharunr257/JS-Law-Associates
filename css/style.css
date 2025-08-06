@@ -222,7 +222,7 @@ body {
         overflow-y: auto;
         height: auto;
         scroll-snap-type: y mandatory;
-        /* Enable scroll snapping */
+        
     }
     .onepage-wrapper {
         height: auto;

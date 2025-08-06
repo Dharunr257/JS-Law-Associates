@@ -75,13 +75,13 @@
     }
     .form-wrapper iframe {
         height: 600px;
-        /* Adjusted for smaller screens */
+        
     }
 }
 
 @media (max-width: 400px) {
     .form-wrapper iframe {
         height: 550px;
-        /* Further reduced for very small screens */
+        
     }
 }
