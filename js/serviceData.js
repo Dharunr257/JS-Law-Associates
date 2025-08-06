@@ -13,7 +13,7 @@ const serviceData = {
       "Individuals with personal, education, or credit card loan defaults.",
       "Businesses facing NPA classification or recovery actions."
     ],
-    image: "/img/loan.jpg"
+    image: "img/loan.jpg"
   },
   rera: {
     title: "RERA (Real Estate Regulatory Authority) Cases",
@@ -29,7 +29,7 @@ const serviceData = {
       "Alteration in building plans or promised features.",
       "Refund demands for cancelled bookings."
     ],
-    image: "../img/rera.jpg"
+    image: "img/rera.jpg"
   },
   drt: {
     title: "DRT (Debt Recovery Tribunal) Matters",
@@ -44,7 +44,7 @@ const serviceData = {
       "Property owners receiving auction/possession notices.",
       "Businesses or guarantors facing DRT litigation."
     ],
-    image: "../img/drt.jpg"
+    image: "img/drt.jpg"
   },
   divorce: {
     title: "Divorce Cases",
@@ -60,7 +60,7 @@ const serviceData = {
       "Mediation and counseling.",
       "Protection under Domestic Violence Act (DV Act)."
     ],
-    image: "../img/divorce.jpg"
+    image: "img/divorce.jpg"
   },
   cheque: {
     title: "Cheque Bounce Cases (Section 138, NI Act)",
@@ -75,7 +75,7 @@ const serviceData = {
       "Notice: Within 30 days of dishonour.",
       "Complaint: Within 15 days after notice period."
     ],
-    image: "../img/cheque.jpg"
+    image: "img/cheque.jpg"
   },
   ibc: {
     title: "Insolvency and Bankruptcy (IBC) Cases",
@@ -90,7 +90,7 @@ const serviceData = {
       "Businesses unable to repay loans.",
       "Creditors seeking fast-track recovery."
     ],
-    image: "../img/insolvency.jpg"
+    image: "img/insolvency.jpg"
   },
   registration: {
     title: "Property Registration Services",
@@ -105,7 +105,7 @@ const serviceData = {
       "Avoid fraud and future litigation.",
       "Ensure smooth ownership transfer with complete legal compliance."
     ],
-    image: "../img/property.jpg"
+    image: "img/property.jpg"
   },
   drafting: {
     title: "Legal Drafting and Documentation",
@@ -119,6 +119,9 @@ const serviceData = {
     suitedFor: [
       "Individuals, startups, corporations, and NGOs requiring legal contracts or personal documentation."
     ],
-    image: "../img/drafting.jpg"
+    image: "img/drafting.jpg"
   }
 };
+
+
+

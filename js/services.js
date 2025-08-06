@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
       const serviceKey = this.dataset.service;
       const data = serviceData[serviceKey];
-
+      console.log(data.image)
       if (!data) return;
 
       // Dynamically inject modal content
@@ -68,3 +68,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
